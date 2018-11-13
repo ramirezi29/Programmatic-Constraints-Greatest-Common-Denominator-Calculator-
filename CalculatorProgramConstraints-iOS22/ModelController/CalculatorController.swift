@@ -9,11 +9,12 @@
 import Foundation
 
 class CalculatorController {
+    
     static let shared = CalculatorController()
     
     func greatestCommonD(_ a: Int, _ b: Int) -> Int {
         
-        print("Start greatesCommonD \(a) - \(b)")
+        // print("Start greatesCommonD \(a) - \(b)")
         if b == 0 {
             return a
         } else {

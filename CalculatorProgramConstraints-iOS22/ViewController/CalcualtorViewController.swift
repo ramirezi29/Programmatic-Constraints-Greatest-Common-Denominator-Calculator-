@@ -30,10 +30,7 @@ class CalcualtorViewController: UIViewController {
         variableBtextFieldConstraint()
         resultsLabelContrastraints()
         fireButtonConstraints()
-        calculateButtonTapped()
     }
-    
-    
     
     // MARK: - Variable A Label
     var variableA: UILabel = {
@@ -65,14 +62,14 @@ class CalcualtorViewController: UIViewController {
     
     
     // MARK: - Calculate Button
-    let calcualteBUtton: UIButton = {
+    lazy var calcualteBUtton: UIButton = {
         
         let calculateImage = UIImage(named: "System-Calc-icon")
         
-        let button = UIButton(type: .system)
+        let button = UIButton()
         
         button.setImage(calculateImage, for: .normal)
-        
+        button.addTarget(self, action: #selector(calculateAction(_:)), for: .touchUpInside)
         return button
     }()
     
@@ -177,15 +174,11 @@ class CalcualtorViewController: UIViewController {
             ])
     }
     
-    private func calculateButtonTapped() {
-        let sayButtonT = UIButton(type: .custom)
-        sayButtonT.addTarget(self, action: #selector(calculateAction(_:)), for: .touchUpInside)
-        print("🚨Button Tapped ")
-    }
-    
     @objc private func calculateAction(_ sender: UIButton?) {
-        let a:Int = Int(variableATextField.text!)!
-        let b:Int = Int(variableBTextField.text!)!
+        guard let a = Int(variableBTextField.text!) else { return }
+        guard let b = Int(variableBTextField.text!) else { return }
+        //let a:Int = Int(variableATextField.text!)!
+        //let b:Int = Int(variableBTextField.text!)!
         
         
         let answer = CalculatorController.shared.greatestCommonD(a, b)
