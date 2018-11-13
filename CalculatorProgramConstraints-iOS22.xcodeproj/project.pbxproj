@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		47BE8F40219A32E600285947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE8F3F219A32E600285947 /* AppDelegate.swift */; };
-		47BE8F42219A32E600285947 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE8F41219A32E600285947 /* ViewController.swift */; };
 		47BE8F45219A32E600285947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47BE8F43219A32E600285947 /* Main.storyboard */; };
 		47BE8F47219A32E800285947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47BE8F46219A32E800285947 /* Assets.xcassets */; };
 		47BE8F4A219A32E800285947 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47BE8F48219A32E800285947 /* LaunchScreen.storyboard */; };
+		47BE8F59219A3E9C00285947 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE8F58219A3E9C00285947 /* Calculator.swift */; };
+		47BE8F5B219A3F2A00285947 /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE8F5A219A3F2A00285947 /* CalculatorController.swift */; };
+		47BE8F5F219A437D00285947 /* CalcualtorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE8F5E219A437D00285947 /* CalcualtorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47BE8F3C219A32E600285947 /* CalculatorProgramConstraints-iOS22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CalculatorProgramConstraints-iOS22.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47BE8F3F219A32E600285947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47BE8F41219A32E600285947 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47BE8F44219A32E600285947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47BE8F46219A32E800285947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47BE8F49219A32E800285947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47BE8F4B219A32E800285947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47BE8F58219A3E9C00285947 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		47BE8F5A219A3F2A00285947 /* CalculatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
+		47BE8F5E219A437D00285947 /* CalcualtorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcualtorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,72 @@
 		47BE8F3E219A32E600285947 /* CalculatorProgramConstraints-iOS22 */ = {
 			isa = PBXGroup;
 			children = (
-				47BE8F3F219A32E600285947 /* AppDelegate.swift */,
-				47BE8F41219A32E600285947 /* ViewController.swift */,
-				47BE8F43219A32E600285947 /* Main.storyboard */,
-				47BE8F46219A32E800285947 /* Assets.xcassets */,
-				47BE8F48219A32E800285947 /* LaunchScreen.storyboard */,
-				47BE8F4B219A32E800285947 /* Info.plist */,
+				47BE8F55219A3E4500285947 /* UI */,
+				47BE8F54219A3E3900285947 /* ViewController */,
+				47BE8F53219A3E3000285947 /* ModelController */,
+				47BE8F52219A3E2600285947 /* Model */,
+				47BE8F51219A3E1F00285947 /* Resources */,
 			);
 			path = "CalculatorProgramConstraints-iOS22";
+			sourceTree = "<group>";
+		};
+		47BE8F51219A3E1F00285947 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47BE8F3F219A32E600285947 /* AppDelegate.swift */,
+				47BE8F46219A32E800285947 /* Assets.xcassets */,
+				47BE8F4B219A32E800285947 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		47BE8F52219A3E2600285947 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47BE8F58219A3E9C00285947 /* Calculator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47BE8F53219A3E3000285947 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				47BE8F5A219A3F2A00285947 /* CalculatorController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		47BE8F54219A3E3900285947 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				47BE8F5E219A437D00285947 /* CalcualtorViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		47BE8F55219A3E4500285947 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				47BE8F57219A3E7F00285947 /* View */,
+				47BE8F56219A3E7500285947 /* Storyboards */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		47BE8F56219A3E7500285947 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				47BE8F43219A32E600285947 /* Main.storyboard */,
+				47BE8F48219A32E800285947 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		47BE8F57219A3E7F00285947 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47BE8F42219A32E600285947 /* ViewController.swift in Sources */,
 				47BE8F40219A32E600285947 /* AppDelegate.swift in Sources */,
+				47BE8F5B219A3F2A00285947 /* CalculatorController.swift in Sources */,
+				47BE8F5F219A437D00285947 /* CalcualtorViewController.swift in Sources */,
+				47BE8F59219A3E9C00285947 /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = "CalculatorProgramConstraints-iOS22/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CalculatorProgramConstraints-iOS22/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = "CalculatorProgramConstraints-iOS22/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CalculatorProgramConstraints-iOS22/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
