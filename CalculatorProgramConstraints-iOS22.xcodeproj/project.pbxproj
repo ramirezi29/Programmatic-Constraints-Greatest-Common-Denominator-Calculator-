@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		472C787A2207624100811A0D /* PulsingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472C78792207624100811A0D /* PulsingController.swift */; };
 		47BE8F40219A32E600285947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE8F3F219A32E600285947 /* AppDelegate.swift */; };
 		47BE8F45219A32E600285947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47BE8F43219A32E600285947 /* Main.storyboard */; };
 		47BE8F47219A32E800285947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47BE8F46219A32E800285947 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		472C78792207624100811A0D /* PulsingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsingController.swift; sourceTree = "<group>"; };
 		47BE8F3C219A32E600285947 /* CalculatorProgramConstraints-iOS22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CalculatorProgramConstraints-iOS22.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47BE8F3F219A32E600285947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47BE8F44219A32E600285947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				47BE8F3F219A32E600285947 /* AppDelegate.swift */,
 				47BE8F46219A32E800285947 /* Assets.xcassets */,
 				47BE8F4B219A32E800285947 /* Info.plist */,
+				472C78792207624100811A0D /* PulsingController.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				47BE8F5B219A3F2A00285947 /* CalculatorController.swift in Sources */,
 				47BE8F5F219A437D00285947 /* CalcualtorViewController.swift in Sources */,
 				47BE8F59219A3E9C00285947 /* Calculator.swift in Sources */,
+				472C787A2207624100811A0D /* PulsingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
